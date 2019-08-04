@@ -1,4 +1,3 @@
-
 const getRandomInt = (max) => {
   return Math.floor(Math.random() * Math.floor(max))
 }
@@ -14,7 +13,7 @@ export default (startIndex = 0, number = 20) => {
     setTimeout(() => {
       const mock = []
       const time = new Date()
-      for (let id = startIndex; id < number; id++) {
+      for (let id = startIndex; id < number + startIndex; id++) {
         mock.push({
           id,
           time,
@@ -22,6 +21,6 @@ export default (startIndex = 0, number = 20) => {
         })
       }
       resolve(mock)
-    }, 2000)
+    }, 500) // 2000毫秒耗时太久，所以改成500毫秒
   })
 }
