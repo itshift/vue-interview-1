@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
     <span class="title"> 面试指引</span>
     <div class="instruction">完成Test.Vue</div>
     <div class="instruction">1.进入后加载mock数据（mock方法的默认调用即可）到store（调用mock.js）</div>
